@@ -1,3 +1,6 @@
+# TDI
+Use the `tdi_adjustments` branch
+
 # pmdarima
 
 [![PyPI version](https://badge.fury.io/py/pmdarima.svg)](https://badge.fury.io/py/pmdarima)
