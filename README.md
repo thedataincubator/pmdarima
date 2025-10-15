@@ -1,3 +1,14 @@
+# TDI customization
+
+There isn't actually much customization going on here. Just adjusting a configuration setting and rebuilding. But there are some important notes about what you actually need to do here.
+
+- First, work on the `tdi_adjustment` branch
+- Change the requirements.txt to match the versions in datacourse
+- run `make bdist_wheel`
+- Assuming it works (which might take some fiddling), you'll get a `build` directory and a `dist` directory
+- The wheel you need is in the `dist` directory. As it currently stands, it's marked as version `0.0.0` (we probably should change that eventually)
+- To install this with poetry, you'll need a more recent version (1.8.2 works for metadata 2.4 - the metadata version is in `pmdarima.egg-info/PKG-INFO`). There are issues with the metadata when using older poetry and newere setuptools (so you could, alternatively, lock to a lower version of setuptools, I believe `69.0.2` still uses the older version)
+
 # pmdarima
 
 [![PyPI version](https://badge.fury.io/py/pmdarima.svg)](https://badge.fury.io/py/pmdarima)
